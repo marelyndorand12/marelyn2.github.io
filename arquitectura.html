@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura Cliente/Servidor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌐 Guía Completa de Alojamiento Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Arquitectura.html" class="active">Arquitectura C/S</a></li>
+                    <li><a href="Alojamiento.html">Hosting</a></li>
+                    <li><a href="Tipos.html">Tipos</a></li>
+                    <li><a href="Ventajas.html">Ventajas/Desventajas</a></li>
+                    <li><a href="Proveedores.html">Proveedores</a></li>
+                    <li><a href="Xampp.html">XAMPP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Arquitectura Cliente / Servidor</h2>
+            
+            <h3>¿Qué es la Arquitectura Cliente/Servidor?</h3>
+            <p>La arquitectura cliente/servidor es un modelo de diseño de software en el cual las tareas se reparten entre los proveedores de recursos o servicios, llamados servidores, y los demandantes, llamados clientes. Este modelo establece la base fundamental de cómo funcionan las aplicaciones distribuidas en Internet.</p>
+            
+            <div class="highlight-box">
+                <h3>Componentes Principales:</h3>
+                <p><strong>Cliente:</strong> Es la aplicación o dispositivo que solicita servicios o recursos. Puede ser un navegador web, una aplicación móvil o cualquier software que inicie la comunicación. El cliente presenta la interfaz de usuario y procesa la información recibida del servidor.</p>
+                
+                <p><strong>Servidor:</strong> Es el sistema que proporciona recursos, datos o servicios. Escucha peticiones de los clientes, las procesa y envía respuestas apropiadas. Los servidores están diseñados para atender múltiples clientes simultáneamente.</p>
+            </div>
+            
+            <h3>Características Principales:</h3>
+            <ul>
+                <li><strong>Separación de responsabilidades:</strong> El cliente maneja la interfaz de usuario y el servidor gestiona los datos y la lógica de negocio</li>
+                <li><strong>Comunicación mediante protocolos:</strong> Utilizan protocolos estándar como HTTP, HTTPS, FTP para intercambiar información</li>
+                <li><strong>Escalabilidad:</strong> Se pueden agregar más servidores o clientes según las necesidades</li>
+                <li><strong>Centralización de recursos:</strong> Los datos y aplicaciones se mantienen en un servidor central, facilitando su gestión y seguridad</li>
+                <li><strong>Independencia de plataforma:</strong> Clientes y servidores pueden funcionar en diferentes sistemas operativos</li>
+            </ul>
+            
+            <h3>Funcionamiento Básico:</h3>
+            <ol>
+                <li>El cliente envía una solicitud (request) al servidor a través de la red</li>
+                <li>El servidor recibe y procesa la solicitud</li>
+                <li>El servidor ejecuta las operaciones necesarias (consulta base de datos, procesamiento, etc.)</li>
+                <li>El servidor envía una respuesta (response) al cliente</li>
+                <li>El cliente recibe y presenta la información al usuario</li>
+            </ol>
+            
+            <h3>Ejemplos Prácticos:</h3>
+            <ul>
+                <li><strong>Navegación web:</strong> Tu navegador (cliente) solicita páginas web a servidores web</li>
+                <li><strong>Correo electrónico:</strong> Tu aplicación de correo (cliente) se conecta a servidores de email</li>
+                <li><strong>Streaming:</strong> Aplicaciones como Netflix (cliente) obtienen contenido de servidores de video</li>
+                <li><strong>Banca online:</strong> La app bancaria (cliente) se comunica con servidores del banco</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>💡 Ventajas de la Arquitectura Cliente/Servidor:</h3>
+                <ul>
+                    <li>Centralización del control y gestión de datos</li>
+                    <li>Facilita el mantenimiento y actualización de aplicaciones</li>
+                    <li>Mejor seguridad al centralizar los datos</li>
+                    <li>Permite el acceso simultáneo de múltiples usuarios</li>
+                    <li>Optimiza el uso de recursos de red</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Guía de Alojamiento Web. Material Educativo.</p>
+    </footer>
+</body>
+</html>

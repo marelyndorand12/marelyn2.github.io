@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAMPP - Servidor Local</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌐 Guía Completa de Alojamiento Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Arquitectura.html">Arquitectura C/S</a></li>
+                    <li><a href="Alojamiento.html">Hosting</a></li>
+                    <li><a href="Tipos.html">Tipos</a></li>
+                    <li><a href="Ventajas.html">Ventajas/Desventajas</a></li>
+                    <li><a href="Proveedores.html">Proveedores</a></li>
+                    <li><a href="Xampp.html" class="active">XAMPP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>XAMPP - Servidor Local para Desarrollo</h2>
+            
+            <h3>¿Qué es XAMPP?</h3>
+            <p>XAMPP es un paquete de software libre que incluye los componentes necesarios para crear un servidor web local en tu computadora. Es una herramienta fundamental para desarrolladores web que desean probar sus sitios y aplicaciones antes de publicarlos en un servidor en Internet.</p>
+            
+            <div class="highlight-box">
+                <h3>Componentes de XAMPP:</h3>
+                <ul>
+                    <li><strong>X:</strong> Cross-platform (Multiplataforma: Windows, Linux, Mac OS)</li>
+                    <li><strong>A:</strong> Apache (Servidor web)</li>
+                    <li><strong>M:</strong> MySQL/MariaDB (Sistema de gestión de bases de datos)</li>
+                    <li><strong>P:</strong> PHP (Lenguaje de programación del lado del servidor)</li>
+                    <li><strong>P:</strong> Perl (Lenguaje de programación)</li>
+                </ul>
+            </div>
+            
+            <h3>¿Por qué usar XAMPP?</h3>
+            <ul>
+                <li><strong>Desarrollo local:</strong> Prueba tus sitios web sin necesidad de conexión a Internet</li>
+                <li><strong>Gratuito:</strong> Software completamente libre y de código abierto</li>
+                <li><strong>Fácil instalación:</strong> Todo en un paquete, sin configuraciones complejas</li>
+                <li><strong>Ambiente seguro:</strong> Prueba sin riesgo antes de subir a producción</li>
+                <li><strong>Ahorro de costos:</strong> No necesitas pagar hosting mientras desarrollas</li>
+                <li><strong>Aprendizaje:</strong> Ideal para estudiantes y principiantes</li>
+            </ul>
+
+            <h3>Instalación de XAMPP</h3>
+            
+            <div class="step">
+                <strong>Paso 1: Descarga XAMPP</strong>
+                <p>Visita el sitio oficial: <a href="https://www.apachefriends.org" target="_blank">https://www.apachefriends.org</a></p>
+                <p>Descarga la versión correspondiente a tu sistema operativo (Windows, Linux o Mac OS)</p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 2: Ejecuta el Instalador</strong>
+                <p><strong>Windows:</strong> Ejecuta el archivo .exe descargado como administrador</p>
+                <p><strong>Mac:</strong> Abre el archivo .dmg y arrastra XAMPP a la carpeta de Aplicaciones</p>
+                <p><strong>Linux:</strong> Dale permisos de ejecución y ejecuta el instalador .run</p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 3: Selecciona Componentes</strong>
+                <p>Durante la instalación, selecciona los componentes que deseas instalar. Para desarrollo web básico necesitas:</p>
+                <ul>
+                    <li>Apache (obligatorio)</li>
+                    <li>MySQL (obligatorio para sitios dinámicos)</li>
+                    <li>PHP (obligatorio)</li>
+                    <li>phpMyAdmin (recomendado para gestionar bases de datos)</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <strong>Paso 4: Elige la Carpeta de Instalación</strong>
+                <p><strong>Windows:</strong> Por defecto se instala en C:\xampp</p>
+                <p><strong>Mac/Linux:</strong> Por defecto se instala en /Applications/XAMPP</p>
+                <p>Puedes cambiar la ubicación si lo deseas, pero se recomienda dejar la ruta por defecto</p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 5: Completa la Instalación</strong>
+                <p>Sigue las instrucciones del instalador hasta que finalice el proceso</p>
+                <p>Al terminar, marca la opción para iniciar el Panel de Control de XAMPP</p>
+            </div>
+
+            <h3>Cómo Cargar y Probar una Página Web en XAMPP</h3>
+
+            <div class="step">
+                <strong>Paso 1: Inicia XAMPP</strong>
+                <p>Abre el Panel de Control de XAMPP</p>
+                <p>Haz clic en el botón "Start" junto a Apache (servidor web)</p>
+                <p>Si tu sitio usa bases de datos, también inicia MySQL</p>
+                <p>Los servicios activos se mostrarán con fondo verde</p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 2: Localiza la Carpeta htdocs</strong>
+                <p>Esta es la carpeta raíz del servidor web local donde debes colocar tus archivos</p>
+                <p><strong>Windows:</strong> C:\xampp\htdocs\</p>
+                <p><strong>Mac:</strong> /Applications/XAMPP/htdocs/</p>
+                <p><strong>Linux:</strong> /opt/lampp/htdocs/</p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 3: Crea una Carpeta para tu Proyecto</strong>
+                <p>Dentro de htdocs, crea una nueva carpeta con el nombre de tu proyecto</p>
+                <p>Ejemplo: C:\xampp\htdocs\mi-sitio-web\</p>
+                <p>Esta organización te permite tener múltiples proyectos separados</p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 4: Copia tus Archivos Web</strong>
+                <p>Copia todos los archivos de tu sitio web a la carpeta que creaste:</p>
+                <ul>
+                    <li>Archivos HTML (.html)</li>
+                    <li>Archivos CSS (.css)</li>
+                    <li>Archivos JavaScript (.js)</li>
+                    <li>Archivos PHP (.php)</li>
+                    <li>Imágenes y otros recursos</li>
+                </ul>
+                <p>Asegúrate de que el archivo principal se llame <strong>index.html</strong> o <strong>index.php</strong></p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 5: Accede a tu Sitio Web Local</strong>
+                <p>Abre tu navegador web (Chrome, Firefox, Edge, etc.)</p>
+                <p>En la barra de direcciones escribe:</p>
+                <p><strong>http://localhost/nombre-de-tu-carpeta/</strong></p>
+                <p>Ejemplo: http://localhost/mi-sitio-web/</p>
+                <p>Tu sitio web se cargará como si estuviera en Internet</p>
+            </div>
+
+            <div class="step">
+                <strong>Paso 6: Prueba y Desarrolla</strong>
+                <p>Ahora puedes:</p>
+                <ul>
+                    <li>Editar tus archivos con cualquier editor de código</li>
+                    <li>Guardar los cambios</li>
+                    <li>Refrescar el navegador (F5) para ver los cambios</li>
+                    <li>Probar funcionalidades PHP y bases de datos</li>
+                </ul>
+            </div>
+
+            <h3>Gestión de Bases de Datos con phpMyAdmin</h3>
+
+            <div class="step">
+                <strong>Acceder a phpMyAdmin:</strong>
+                <p>Con Apache y MySQL iniciados, abre tu navegador</p>
+                <p>Ve a: <strong>http://localhost/phpmyadmin/</strong></p>
+                <p>Desde aquí puedes crear, editar y gestionar bases de datos MySQL</p>
+            </div>
+
+            <h3>Consejos y Mejores Prácticas</h3>
+            <ul>
+                <li><strong>Puerto ocupado:</strong> Si Apache no inicia, probablemente el puerto 80 esté ocupado (por Skype, IIS u otro programa). Cambia el puerto en la configuración de XAMPP</li>
+                <li><strong>Organización:</strong> Mantén cada proyecto en su propia carpeta dentro de htdocs</li>
+                <li><strong>Backups:</strong> Respalda regularmente tu carpeta htdocs y bases de datos</li>
+                <li><strong>Seguridad:</strong> XAMPP está configurado para desarrollo, no para producción. Nunca uses XAMPP como servidor público</li>
+                <li><strong>Versiones PHP:</strong> Puedes cambiar la versión de PHP si tu proyecto lo requiere</li>
+                <li><strong>Logs:</strong> Revisa los logs de error si algo no funciona correctamente</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>🚀 Ejemplo Rápido de Prueba</h3>
+                <p><strong>1.</strong> Crea una carpeta: C:\xampp\htdocs\prueba\</p>
+                <p><strong>2.</strong> Crea un archivo
